@@ -24,6 +24,10 @@ public class BookController {
 	@Autowired 
 	private CategoryRepository categoryRepository;
 
+	@RequestMapping (value="/login", method =RequestMethod.GET)
+	public String login () {
+		return "login";
+	}
 	// Lists books from database
 	@RequestMapping (value="/booklist", method = RequestMethod.GET)
 	public String getBooks(Model model) {
