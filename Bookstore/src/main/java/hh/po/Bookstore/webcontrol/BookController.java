@@ -24,7 +24,7 @@ public class BookController {
 	@Autowired 
 	private CategoryRepository categoryRepository;
 
-	@RequestMapping (value="/login", method =RequestMethod.GET)
+	@RequestMapping (value="/login")
 	public String login () {
 		return "login";
 	}
